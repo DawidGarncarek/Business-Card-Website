@@ -1,0 +1,1385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lora;
+    cursor: default;
+    background-color: #0D0D0D;
+    scroll-behavior: smooth;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    position: relative;
+    background: rgb(2, 115, 94);
+    background: linear-gradient(180deg, rgba(2, 115, 94, 1) 78%, rgba(1, 89, 88, 1) 100%);
+    height: 90vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header img {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+.welcome {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 11%;
+}
+.odwiedziny
+{
+	font-size:12px;
+	font-weight:20;
+}
+
+header div.welcome {
+    z-index: 1;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: snow;
+}
+
+header h1 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header #zegar {
+    font-weight: 80;
+    font-size: 8px;
+    color: white;
+}
+.loguj {
+	color:white;
+	text-decoration:none;
+}
+.loguj:hover {
+	opacity:0.5;
+    color:red;
+    transition: .3s;
+}
+
+@media (orientation: portrait) and (min-width:320px) {
+    header #zegar {
+        padding-top: 5px;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+
+    header img {
+        position: absolute;
+        height: 55%;
+        bottom: 0%;
+        right: -5%;
+    }
+}
+
+@media (orientation: portrait) and (min-width:359px) {
+    header #zegar {
+		padding-left:5px;
+        font-size: 12px;
+    }
+    header img {
+
+        right: -16%;
+    }
+}
+
+@media (orientation: portrait) and (min-width:374px) {
+
+    header img {
+        right: -8%;
+    }
+}
+
+@media (orientation: portrait) and (min-width:389px) {
+
+    header img {
+        height: 55%;
+        bottom: 0%;
+        right: -20%;
+    }
+}
+
+@media (orientation: portrait) and (min-width:400px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+
+    header img {
+        position: absolute;
+        height: 55%;
+        bottom: 0%;
+        right: -20%;
+    }
+}
+
+@media (orientation: portrait) and (min-width:539px) {
+    header #zegar {
+        font-size: 19px;
+    }
+
+    header img {
+        height: 56%;
+        right: 6%;
+    }
+}
+
+@media (orientation: portrait) and (min-width:767px) {
+    header #zegar {
+        font-size: 25px;
+    }
+    header img {
+        height: 65%;
+        right: -3%;
+    }
+}
+
+@media (orientation: portrait) and (min-width:820px) {
+    header #zegar {
+        font-size: 24px;
+    }
+	
+
+    header h1 {
+        font-size: 37px;
+    }
+
+    header h2 {
+        margin-top: 25px;
+        font-size: 37px;
+    }
+
+    header img {
+
+        height: 65%;
+        bottom: 0%;
+        right: -5%;
+    }
+}
+
+@media (orientation: landscape) {
+    header #zegar {		
+        padding: 10px 0 0 20px;
+    }
+
+    header img {
+        position: absolute;
+        height: 85%;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    header div.welcome {
+        left: 5%;
+        right: 50%;
+        top: 30%;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1024px) {
+    header {
+        background: rgb(13, 13, 13);
+        background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(2, 115, 94, 1) 10%, rgba(2, 115, 94, 1) 90%, rgba(13, 13, 13, 1) 100%);
+    }
+
+    header #zegar {
+        padding-left: 120px;
+		padding-bottom:0px;
+        font-size: 20px;
+    }
+
+    header img {
+        position: absolute;
+        height: 95%;
+        bottom: 0%;
+        right: -7%;
+    }
+
+    header h1 {
+        font-size: 34px;
+        margin-top: 35px;
+    }
+
+    header h2 {
+        margin-top: 15px;
+        margin-top: 15px;
+        font-size: 34px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width:1280px) {
+    header #zegar {
+        padding-left: 165px;
+    }
+
+    header div.welcome {
+        text-align: left;
+    }
+
+    header p {
+        font-size: 80px;
+    }
+
+    header h1 {
+        letter-spacing: 2px;
+        font-size: 45px;
+        margin-top: 35px;
+    }
+
+    header h2 {
+        margin-top: 25px;
+        font-size: 45px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width:1600px) {
+    header div.welcome {
+        margin-left: 60px;
+    }
+
+    header img {
+        position: absolute;
+        height: 95%;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    header p {
+        font-size: 100px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header h2 {
+        font-size: 50px;
+    }
+
+}
+
+
+/*MENU*/
+nav {
+    max-width: 1920px;
+    background: rgb(1, 64, 64);
+    background: linear-gradient(0deg, rgba(1, 64, 64, 1) 14%, rgba(1, 89, 88, 1) 100%);
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    margin: 5px 0;
+    line-height: 40px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: powderblue;
+    padding: 0px 10px;
+    text-decoration: none;
+    border-right: 2px solid black;
+}
+
+
+nav ul li:nth-child(6) a {
+    border-style: none;
+}
+
+nav ul li i {
+    padding-right: 18px;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+@media (orientation: portrait) {
+    nav ul {
+        padding-left: 30px;
+    }
+
+    nav ul li a {
+        margin: 5px auto;
+        line-height: 8px;
+        display: block;
+        font-size: 15px;
+        color: powderblue;
+        padding: 0px 5px;
+        text-decoration: none;
+    }
+
+
+    nav ul li i {
+        padding-right: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (orientation: portrait) and (min-width:320px) {
+    nav ul {
+        padding-left: 0;
+    }
+
+    nav ul li a {
+        line-height: 10px;
+        font-size: 7px;
+        padding: 0px 7px;
+    }
+
+    nav ul li i {
+        padding-right: 10px;
+        font-size: 8px;
+    }
+}
+
+@media (orientation: portrait) and (min-width:533px) {
+    nav ul {
+        padding: 5px;
+    }
+
+    nav ul li a {
+        line-height: 10px;
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    nav ul li i {
+        padding-right: 5px;
+        font-size: 13px;
+    }
+}
+
+@media (orientation: portrait) and (min-width:786px) {
+    nav ul {
+        padding-left: 5px;
+    }
+
+    nav ul li a {
+        line-height: 14px;
+        font-size: 14px;
+        padding: 0px 28px;
+    }
+
+    nav ul li i {
+        padding-right: 10px;
+        font-size: 19px;
+    }
+}
+
+@media (orientation: portrait) and (min-width:1024px) {
+    nav ul {
+        padding-left: 30px;
+    }
+
+    nav ul li a {
+        line-height: 17px;
+        font-size: 35px;
+        padding: 0px 32px;
+    }
+
+    nav ul li i {
+        padding-right: 10px;
+        font-size: 35px;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1024px) {
+    nav ul li a {
+        line-height: 17px;
+        font-size: 18px;
+        padding: 0px 25px;
+        margin: 16px 10px;
+    }
+
+    nav ul li i {
+        line-height: 17px;
+        font-size: 15px;
+    }
+
+    nav {
+        background: rgb(1, 64, 64);
+        background: linear-gradient(0deg, rgba(1, 64, 64, 1) 19%, rgba(1, 89, 88, 1) 56%, rgba(2, 115, 94, 1) 100%);
+    }
+}
+
+@media (orientation: landscape) and (min-width:1224px) {
+    nav ul li a {
+        line-height: 17px;
+        font-size: 25px;
+        padding: 0px 25px;
+        margin: 16px 10px;
+    }
+
+    nav ul li i {
+        line-height: 17px;
+        font-size: 20px;
+    }
+}
+
+/*USLUGI*/
+
+.uslugi span {
+    line-height: 15px;
+    padding: 15px 0 20px 0;
+    float: left;
+    font-size: 20px;
+}
+
+.uslugi {
+    font-size: 20px;
+    margin: 5px auto;
+    padding: 45px 0 5px;
+    width: 80%;
+    color: white;
+}
+
+
+@media (orientation: portrait) and (min-width:280px) {
+    .uslugi span {
+        text-align: center;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width:580px) {
+    .uslugi span {
+        font-size: 18px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width:880px) {
+    .uslugi span {
+        line-height: 20px;
+        font-size: 20px;
+    }
+}
+
+/*TABELKA*/
+.tg {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 5px 0 5px;
+    width: 80%;
+}
+
+.tg .wiersze:nth-of-type(odd) {
+    color: white;
+    background-color: #731702;
+    text-shadow: 0 0 3px white;
+}
+
+.tg .wiersze:nth-of-type(even) {
+    color: black;
+    background-color: #F27405;
+    text-shadow: 0 0 1px black;
+}
+
+td {
+    border-style: solid;
+    font-size: 22px;
+    padding: 16px 10px;
+}
+
+th {
+    border-style: solid;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 10px;
+}
+
+.nagl {
+    font-style: italic;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+    text-transform: uppercase;
+    border-color: white;
+    text-align: left;
+}
+
+.wiersze {
+    border-color: white;
+    text-align: left;
+    vertical-align: top;
+}
+
+.dopisek {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 10px;
+}
+
+@media (orientation: portrait) and (min-width:280px) {
+    td {
+        font-size: 10px;
+    }
+
+    .nagl {
+        font-size: 10px;
+    }
+
+    .dopisek {
+        font-size: 6px;
+    }
+}
+
+@media (orientation: portrait) and (min-width:400px) {
+    td {
+        font-size: 15px;
+    }
+
+    .nagl {
+        font-size: 15px;
+    }
+
+    .dopisek {
+        font-size: 8px;
+    }
+}
+
+/*KALKULATOR*/
+.cal {
+    color: white;
+    margin: 25px auto;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.cal h3 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.cal p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cal button {
+    padding: 2px 25px;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #0D0D0D;
+    color: white;
+    border: 2px solid white;
+    transition: .3s;
+}
+
+.cal button:hover {
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/*OGLOSZENIA*/
+.ogloszenia {
+	color: white;
+    margin: 25px auto;
+    padding: 5px 0;
+    text-align: center;
+}
+.ogloszenia h1{
+	color: white;
+    text-align: center;
+}
+.inputogloszenia h1{
+	margin:10px;
+	color: white;
+    text-align: center;
+}
+.inputogloszenia p{
+	font-family:Lora;
+    padding: 5px;
+    text-align: center;
+	color:white;
+}
+.inputogloszenia{
+	font-family:Lora;
+	margin: 25px auto;
+    padding: 5px;
+    text-align: center;
+}
+.inputogloszenia p button{
+	margin-top:5px;
+	padding:1px 20px;
+	font-size: 14px;
+    line-height: 40px;
+    background-color: #0D0D0D;
+    color: white;
+    border: 2px solid white;
+    transition: .3s;
+}
+.inputogloszenia form p button:hover {
+    color: black;
+    background-color: #fff;
+}
+.inputogloszenia form input,textarea {
+    background-color: #0D0D0D;
+	font-family:Lora;
+	color:white;
+	border:1px white solid;
+	padding:5px;
+	margin:2px;
+}
+
+/*SPRZET*/
+.sprzet {
+    margin: auto;
+    max-width: 1920px;
+    background: #014040;
+    padding: 10px 0 30px;
+}
+
+.komp {
+    color: white;
+    margin: 20px 20px;
+}
+
+.podzespol {
+    padding: 5px;
+}
+
+.komp .podzespol i {
+    color: midnightblue;
+    padding: 5px;
+}
+
+.komp p {
+    line-height: 50px;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+h6 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 40px;
+    padding: 30px 30px;
+    color: White;
+}
+
+.komp img {
+    margin-bottom: 20px;
+    width: 130px;
+    height: 50px;
+    float: right;
+}
+
+@media (orientation: portrait) and (min-width:200px) {
+    h6 {
+        font-size: 15px;
+    }
+
+    .podzespol {
+        font-size: 10px;
+    }
+}
+
+@media (orientation: portrait) and (min-width:600px) {
+    h6 {
+        font-size: 20px;
+    }
+
+    .podzespol {
+        font-size: 15px;
+    }
+}
+
+/*MOJE CECHY*/
+.cv {
+    background: #014040;
+    padding: 10px 0 30px;
+}
+
+.cv h1 {
+    text-shadow: 0 0 3px black;
+    font-size: 24px;
+    font-family: Lora, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.cv .web img {
+    width: 100%;
+    height: 40vh;
+}
+
+.cv .about {
+    color: white;
+    font-family: Lora, sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+}
+
+.cv .about h2 {
+    text-shadow: 0 0 2px white;
+    font-size: 19px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+}
+
+.cv .about p {
+    text-align: left;
+    font-size: 9px;
+    padding-left: 20px;
+}
+
+.cv .about h3 {
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 1000;
+    text-shadow: 0 0 0.5px black;
+}
+
+.cv .info {
+    max-width: 1400px;
+    margin: 0 auto 20px;
+}
+
+.cv .info:nth-of-type(odd) {
+    background-color: #731702;
+}
+
+.cv .info:nth-of-type(even) {
+    background-color: #F27405;
+}
+
+@media (min-width:768px) {
+    .cv .web img {
+        height: 70%;
+    }
+
+    .cv h1 {
+        font-size: 40px;
+    }
+
+    .cv .about h2 {
+        font-size: 26px;
+        text-indent: 0;
+
+    }
+
+    .cv .about p {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .cv .about h3 {
+        padding-left: 20px;
+        font-size: 19px;
+    }
+
+    .cv .info {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (orientation: landscape) {
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .cv .info:nth-of-type(even) .web {
+        float: right;
+    }
+
+    .cv .info:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+
+    .cv .info:nth-of-type(even) .about p {
+        padding-right: 20px;
+        margin-left: 20px;
+        text-indent: 0;
+    }
+
+    .cv .info:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cv .info:nth-of-type(even) .about h3 {
+        text-indent: 0;
+        padding-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    .cv h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .cv .about h2 {
+        padding-left: 17px;
+        padding-top: 50px;
+        font-size: 24px;
+        text-indent: 0px;
+        margin-bottom: 20px;
+    }
+
+    .cv .about p {
+        font-size: 15px;
+        padding-left: 17px;
+        line-height: 180%;
+    }
+
+    .cv .about h3 {
+        padding-left: 17px;
+        font-size: 19px;
+    }
+
+    .cv .info {
+        margin-bottom: 40px;
+    }
+}
+
+/*MOTTO*/
+.slogan {
+    text-align: center;
+    background-image: url(motto4.jpg);
+    background-size: cover;
+    background-position: top;
+    color: white;
+    background-attachment: fixed;
+}
+
+.slogan h1 {
+    text-shadow: 0 0 3px black;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.slogan p.text {
+    font-size: 18px;
+}
+
+.slogan p.author {
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.slogan .bg {
+    padding: 40px 10px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media(orientation:landscape) {
+    .slogan {
+        height: 90%;
+    }
+
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .slogan h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .slogan p.text {
+        font-size: 25px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .slogan .bg {
+        padding: 50px 10px;
+        background-color: rgba(0, 63, 114, 0.5);
+    }
+}
+
+@media (min-width:1024px) {
+    .slogan h1 {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+
+    .slogan p.text {
+        font-size: 30px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slogan p.author {
+        margin-top: 45px;
+        font-size: 20px;
+    }
+
+    .slogan .bg {
+        padding: 90px 10px;
+    }
+}
+
+/*hobby*/
+.hobby {
+    background-color: #0D0D0D;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby h1 {
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+.hobby .item {
+    height: 25vh;
+
+}
+
+.hobby .item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(hobby4.jpg);
+}
+
+
+.hobby .item p {
+    font-family: Lora, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 25vh;
+    height: 25vh;
+    text-shadow: 0 0 5px white;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.hobby h1 {
+    font-family: Lora, sans-serif;
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+@media (min-width:533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    .hobby .item p {
+        height: 40vh;
+        line-height: 40vh;
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .hobby h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item p {
+        line-height: 40vh;
+        padding: 0;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .hobby h1 {
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+
+    }
+
+    .hobby .item p {
+        font-size: 40px;
+    }
+}
+
+/*KONTAKT*/
+.contact {
+    background-color: #0D0D0D;
+    padding: 30px 20px;
+}
+
+.contact h1 {
+    font-family: Lora, sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: Lora, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input {
+
+    height: 36px;
+
+}
+
+.contact textarea {
+    height: 120px
+}
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #0D0D0D;
+    color: white;
+    border: 2px solid white;
+    transition: .3s;
+}
+
+.contact .socials {
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social {
+
+    padding: 10px 0;
+    color: white;
+    font-family: Lora, sans-serif;
+
+}
+
+.contact .social img {
+    float: left;
+
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    font-size: 15px;
+}
+
+.contact button:hover {
+    color: black;
+    background-color: #fff;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact h1 {
+        font-size: 50px;
+        padding: 30px 0;
+        font-style: italic;
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 20px
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        margin-bottom: 35px;
+
+    }
+
+    .contact input {
+
+        height: 46px;
+        font-size: 24px;
+
+    }
+
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .contact button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: .3s;
+        cursor: pointer;
+
+    }
+
+}
+/*LOGOWANIE*/
+
+.login {
+    background-color: #0D0D0D;
+    padding: 30px 20px;
+}
+
+.login h1 {
+    font-family: Lora, sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.login .wrap {
+    padding-top: 20px;
+    max-width: 424px;
+    margin-left:auto;
+	margin-right:auto;
+}
+
+.login input,
+.login button{
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: Lora, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.login input {
+
+    height: 36px;
+
+}
+
+
+.login button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #0D0D0D;
+    color: white;
+    border: 2px solid white;
+    transition: .3s;
+}
+
+
+.login button:hover {
+    color: black;
+    background-color: #fff;
+}
+.loginput{
+		color:black;
+	}
+	.logerror{
+		color:white;
+	    text-decoration:none;
+		text-align:center;
+	}
+	.logerror1{
+		color:white;
+	    text-decoration:none;
+		font-size:25px;
+	}
+	.logerror1:hover{
+		opacity:0.5;
+		color:red;
+		transition: .3s;
+	}
+	.login h1{
+	font-family: Lora;	
+	}
+
+
+@media (min-width: 1024px) {
+
+    .login h1 {
+        font-size: 50px;
+        padding: 20px 0;
+        font-style: italic;
+    }
+
+    .login form{
+		max-width: 424px;
+        float: left;
+        width: 100%;
+        padding: 0 20px
+    }
+
+    .login input,
+    .login button{
+        margin-bottom: 35px;
+
+    }
+
+    .login input {
+
+        height: 46px;
+        font-size: 24px;
+
+    }
+
+    .login button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: .3s;
+        cursor: pointer;
+
+    }
+}
+
+footer {
+    background-color: #02735E;
+    font-family: Lora;
+    text-align: center;
+    color: snow;
+    padding: 15px;
+    font-size: 20px;
+}
